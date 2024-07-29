@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import routes from './routes';
 import middleware from './middleware';
 
@@ -8,6 +9,12 @@ const app = express();
 type TempMessageResponse = {
   message: string;
 };
+
+var corsOptions = {
+  origin: 'localhost:5173',
+};
+
+app.use(cors(corsOptions));
 
 app.get<unknown, TempMessageResponse>('/', (req, res) => {
   res.send({ message: 'Should this be the site?' });
