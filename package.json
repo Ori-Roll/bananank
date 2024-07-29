@@ -18,6 +18,7 @@
   "author": "Ori",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.14.12",
     "nodemon": "^3.1.4"
   }
 }
