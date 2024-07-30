@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["Bananank", "healthcheck"]
+  "cSpell.words": ["Bananank", "healthcheck"],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#1440a0"
+  }
 }
