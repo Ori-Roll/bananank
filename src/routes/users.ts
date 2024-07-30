@@ -8,7 +8,7 @@ const mockUsers = [
 ];
 
 router.get('/', (req, res) => {
-  res.send({ data: mockUsers });
+  res.send({ users: mockUsers });
 });
 
 router.get('/:id', (req, res) => {
@@ -17,7 +17,7 @@ router.get('/:id', (req, res) => {
   if (!user) {
     return res.status(404).send({ message: 'User not found' });
   }
-  res.send({ data: user });
+  res.send({ user: user });
 });
 
 export default router;

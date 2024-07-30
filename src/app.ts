@@ -11,10 +11,10 @@ type TempMessageResponse = {
 };
 
 var corsOptions = {
-  origin: 'localhost:5173',
+  origin: 'localhost',
 };
-
-app.use(cors(corsOptions));
+//TODO: !!! This should only be used in development and cores should be set up properly
+app.use(cors());
 
 app.get<unknown, TempMessageResponse>('/', (req, res) => {
   res.send({ message: 'Should this be the site?' });
